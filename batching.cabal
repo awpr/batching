@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.4.
+-- This file has been generated from package.yaml by hpack version 0.35.1.
 --
 -- see: https://github.com/sol/hpack
 
@@ -16,7 +16,7 @@ homepage:       https://github.com/google/hs-batching#readme
 bug-reports:    https://github.com/google/hs-batching/issues
 author:         Andrew Pritchard <awpr@google.com>
 maintainer:     Andrew Pritchard <awpr@google.com>
-copyright:      2019-2021 Google LLC
+copyright:      2019-2021 Google LLC; 2023 Andrew Pritchard
 license:        Apache-2.0
 license-file:   LICENSE
 build-type:     Simple
@@ -33,7 +33,7 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.12 && <4.17
+      base >=4.12 && <4.19
     , primitive >=0.1 && <0.8
     , short-vec ==0.1.*
     , sint >=0.1 && <0.3
@@ -46,7 +46,7 @@ test-suite Batching-test
       test
   build-depends:
       QuickCheck
-    , base >=4.12 && <4.17
+    , base >=4.12 && <4.19
     , batching
     , primitive >=0.1 && <0.8
     , short-vec

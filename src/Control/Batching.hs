@@ -1,4 +1,5 @@
 -- Copyright 2019-2021 Google LLC
+-- Copyright 2023 Andrew Pritchard
 --
 -- Licensed under the Apache License, Version 2.0 (the "License");
 -- you may not use this file except in compliance with the License.
@@ -12,6 +13,7 @@
 -- See the License for the specific language governing permissions and
 -- limitations under the License.
 
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE AllowAmbiguousTypes #-}
 {-# LANGUAGE BangPatterns #-}
 {-# LANGUAGE DataKinds #-}
@@ -30,7 +32,9 @@ module Control.Batching
          ( Batching, request, batchRequest, runBatching, runBatching_
          ) where
 
+#if !MIN_VERSION_base(4, 18, 0)
 import Control.Applicative (Applicative(..))
+#endif
 import Control.Monad.ST (runST)
 import Data.Foldable (sequenceA_, toList)
 import qualified Data.Foldable as F
