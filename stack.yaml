@@ -1,4 +1,5 @@
 # Copyright 2021 Google LLC
+# Copyright 2023 Andrew Pritchard
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,14 +19,14 @@ packages:
 - .
 
 extra-deps:
-- attenuation-0.1.0.0
-- fin-int-0.2.0
-- short-vec-0.1.0.0
+- attenuation-0.2.0
+- fin-int-0.2.0.1
+- short-vec-0.1.0.1
 - sint-0.2.0
-- portray-0.1.0.0
-- portray-diff-0.1.0.0
-- portray-pretty-0.1.0.0
-- wrapped-0.1.0.0
+- portray-0.3.0
+- portray-diff-0.1.1
+- portray-pretty-0.1.0.3
+- wrapped-0.1.0.1
 
 ghc-options:
   "$locals": -Wall -Werror
